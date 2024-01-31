@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-//import "styles.css";
+import "../src/App.css";
 
 function App(){
     
@@ -25,11 +25,11 @@ function App(){
   return (
     <div className="app">
       <div>
-        Search: <input name="query" type="text" onChange={handleSearch} />
+        Search: <input className="textbar" name="query" type="text" onChange={handleSearch} />
       </div>
       {filterList &&
         filterList.map((item, index) => (
-          <div key={index}>{item}</div>
+          <div className="list" key={index}>{item}</div>
         ))}
     </div>
   );
