@@ -100,21 +100,3 @@ public class EmployeeRecordLinkedList {
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
