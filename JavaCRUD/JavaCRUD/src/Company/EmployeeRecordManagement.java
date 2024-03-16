@@ -53,5 +53,49 @@ public class EmployeeRecordManagement {
 			System.out.println("Record removed successfully!");
 		}
 	}
+	
+	public Record findRecord(int idNumber) {
+		for(Record l : list) {
+			if(l.getIdNumber() == idNumber) {
+				return l;
+			}
+		}
+		return null;
+	}
+	
+	public void update(int id, Scanner input) {
+		if(find(id)) {
+			Record rec = findRecord(id);
+			
+			System.out.print("What is the new Employee ID? ");
+			int idNumber = input.nextInt();
+			
+			System.out.print("What is the new employee number? ");
+			int contactNumber = input.nextInt();
+			input.nextLine();
+			
+			System.out.print("What the new Employee name? ");
+			String name = input.nextLine();
+			
+			rec.setIdNumber(idNumber);
+			rec.setName(name);
+			rec.setContactNumber(contactNumber);
+			System.out.println("Record updated successfully!");
+		}
+		else {
+			System.out.println("Record was not found, Try again");
+		}
+	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
