@@ -86,6 +86,16 @@ public class EmployeeRecordManagement {
 			System.out.println("Record was not found, Try again");
 		}
 	}
+	
+	public void display() {
+		if(list.isEmpty()) {
+			System.out.println("The list has no records");
+		}
+		
+		for(Record record : list) {
+			System.out.println(record.toString());
+		}
+	}
 
 }
 
