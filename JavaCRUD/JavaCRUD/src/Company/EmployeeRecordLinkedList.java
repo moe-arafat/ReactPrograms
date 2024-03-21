@@ -8,7 +8,7 @@ public class EmployeeRecordLinkedList {
 		
 		Scanner scnr = new Scanner(System.in);
 		
-		EmployeeRecordMT mt = new EmployeeRecordMT();
+		EmployeeRecordManagement mt = new EmployeeRecordManagement();
 		
 		Record record = new Record();
 		
@@ -89,7 +89,7 @@ public class EmployeeRecordLinkedList {
 	
 	public static void menu() {
 		
-		System.out.println("MENU");
+		System.out.println("\nMENU");
 		System.out.println("1: Add Employee");
 		System.out.println("2: Delete Employee");
 		System.out.println("3: Update Employee");
